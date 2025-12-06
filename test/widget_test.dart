@@ -6,7 +6,7 @@ void main() {
     testWidgets('App launches successfully', (WidgetTester tester) async {
       // This is a smoke test that verifies the app can build and launch
       // More comprehensive tests will be added as the app structure is finalized
-      
+
       // Create a minimal widget tree for testing
       await tester.pumpWidget(
         const MaterialApp(
@@ -24,7 +24,7 @@ void main() {
 
     testWidgets('Material app renders correctly', (WidgetTester tester) async {
       await tester.pumpWidget(
-        const MaterialApp(
+        MaterialApp(
           home: Scaffold(
             appBar: AppBar(
               title: Text('User Account'),
